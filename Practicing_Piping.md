@@ -124,7 +124,7 @@ then finally the flag was retrieved using
 
 #### flag: ```pwn.college{Uy9AAPMkc9BirzfXmJdSENDZjpz.dFjM5QDL0kTO3czW}```
 
-## Writing To Multiply Programs
+## Writing To Multiple Programs
 
 ### Program:
 
