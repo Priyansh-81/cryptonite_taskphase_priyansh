@@ -38,6 +38,15 @@ created a file win and opened it using vim, then after that in insert mode i use
 
 ![image](images/PATH3sol.png)
 
+### Second Approach:
+
+for this approach, inside the win file...
+
+I used the cat program to read the file, so in the win file, i wrote ```/bin/cat /flag```, so it reads, the flag file...this did not work directly, so after doing some research I used the she-bang character sequence '#!', this executes the script in bash, like in this case cat is given as an argument to #!/bin/bash
+
+![imageB](images/PATH3sol2.png)
+
+
 #### flag: ```pwn.college{4-VL2WKYDOHQtvRlH2qmJOjkAD0.dZzNyUDL0kTO3czW}```
 
 ## Hijacking Commands
