@@ -48,7 +48,7 @@ created a file win and opened it using vim, then after that in insert mode i use
 ### Solution:
 
 for this challenge, since we know ```/challenge/run``` is going to envoke rm, so what i did is i created my own rm command ```touch rm; vim rm```, in vim editor, i gave the command similar to last time, using read and echo builtin, i copied the contents of flag in a variable value then printed it using echo
-```read value < /flag```, ```echo $value```, then i exited vim, after this I changed the permission of rm to executable using ```chmod 744 win```, now changed the path to home so using ```PATH="~"```, this way now ```/challenge/run``` won't be able to locate original rm command, and will execute mine. 
+```read value < /flag```, ```echo $value```, then i exited vim, after this I changed the permission of rm to executable using ```chmod 744 rm```, now changed the path to home so using ```PATH="~"```, this way now ```/challenge/run``` won't be able to locate original rm command, and will execute mine. 
 
 Then I finally executed ```/challenge/run```, command which gave me the flag.
 (inturn it executes rm command (my version), which similar to last challenge using builtins prints the value of flag from the variable value)
